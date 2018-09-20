@@ -16,6 +16,10 @@
 
 * L'administration du module supporte le français et l'anglais.
 
+### Licence
+
+* GNU v3
+
 ### Données
 
  * Aucune base de données n'est installée.
@@ -25,3 +29,9 @@
 ### Démo
 
 * URL : https://test.cibles.fr/evangelizo/joomla/
+
+-------------
+
+#### Développement
+
+Agence web Cibles : http://www.cibles.fr
