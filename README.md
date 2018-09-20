@@ -5,16 +5,20 @@
 ### Module Joomla!
 
 * Le module 'mod_evangelizo' permet d'afficher la fête liturgique et/ou le saint du jour dans votre site.
-* Affichage en 13 langues et selon 5 calendriers liturgiques.
 * Plusieurs modules de langues différentes peuvent être affichés sur une seule page.
-
-### Compatibilité
-
-* Fonctionne avec Joomla! 3.
 
 ### Traduction
 
-* L'administration du module supporte le français et l'anglais.
+* Front-office : affichage en 13 langues et selon 5 calendriers liturgiques.
+* Back-office : l'administration du module supporte le français et l'anglais.
+
+### Compatibilité
+
+* Fonctionne avec Joomla! 3
+
+### Version
+
+* Version actuelle : 1.0 (stable)
 
 ### Licence
 
