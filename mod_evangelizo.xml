@@ -12,6 +12,8 @@
 	<files>
 		<filename module="mod_evangelizo">mod_evangelizo.php</filename>
 		<filename>mod_evangelizo.json</filename>
+		<filename>LICENSE</filename>
+		<filename>README.md</filename>
 		<folder>tmpl</folder>
 	</files>
 	<languages>
