@@ -11,7 +11,10 @@
 	<description>MOD_EVANGELIZO_XML_DESCRIPTION</description>
 	<files>
 		<filename module="mod_evangelizo">mod_evangelizo.php</filename>
-		<filename>mod_evangelizo.json</filename>
+		<filename>mod_evangelizo.xml</filename>
+		<filename>index.html</filename>
+		<filename>LICENSE</filename>
+		<filename>README.md</filename>
 		<folder>tmpl</folder>
 	</files>
 	<languages>
