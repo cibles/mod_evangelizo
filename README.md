@@ -18,7 +18,7 @@
 
 ### Licence
 
-* GNU v3
+* GNU GPL version 3
 
 ### Données
 
