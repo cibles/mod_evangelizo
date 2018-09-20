@@ -1,6 +1,6 @@
 # mod_evangelizo
 
-![alt evangelizo](http://www.cibles.fr/images/evangelizo.png)
+![alt evangelizo](https://fr.peripsum.org/assets/img/ic_menu_logo.png)
 
 ### Module Joomla!
 
@@ -34,7 +34,7 @@
 
 * URL : https://test.cibles.fr/evangelizo/joomla/
 
--------------
+---
 
 #### Développement
 
