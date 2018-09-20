@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>mod_evangelizo</name>
+	<author>Agence web Cibles</author>
+	<creationDate>January 2018</creationDate>
+	<copyright>Copyright (C) 2018 Agence web Cibles. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>contact@cibles.fr</authorEmail>
+	<authorUrl>www.cibles.fr</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_EVANGELIZO_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_evangelizo">mod_evangelizo.php</filename>
+		<filename>mod_evangelizo.json</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_evangelizo.ini</language>
+		<language tag="en-GB">en-GB.mod_evangelizo.sys.ini</language>
+		<language tag="fr-FR">fr-FR.mod_evangelizo.ini</language>
+		<language tag="fr-FR">fr-FR.mod_evangelizo.sys.ini</language>
+	</languages>
+	<updateservers>
+		<server type="extension" priority="1" name="Evangelizo"><![CDATA[https://www.cibles.fr/updates_mod_evangelizo.xml]]></server>
+	</updateservers>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_CUSTOM_HTML" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic" label="COM_MODULES_BASIC_FIELDSET_LABEL">
+				<field
+					name="langue"
+					type="list"
+					label="MOD_EVANGELIZO_LANGUE_LABEL"
+					description="MOD_EVANGELIZO_LANGUE_DESCRIPTION"
+					default="AM"
+					class="input-xxlarge"
+					>
+					<option value="AM">MOD_EVANGELIZO_LANGUE_AM</option>
+					<option value="AR">MOD_EVANGELIZO_LANGUE_AR</option>
+					<option value="DE">MOD_EVANGELIZO_LANGUE_DE</option>
+					<option value="FR">MOD_EVANGELIZO_LANGUE_FR</option>
+					<option value="GR">MOD_EVANGELIZO_LANGUE_GR</option>
+					<option value="IT">MOD_EVANGELIZO_LANGUE_IT</option>
+					<option value="NL">MOD_EVANGELIZO_LANGUE_NL</option>
+					<option value="PL">MOD_EVANGELIZO_LANGUE_PL</option>
+					<option value="PT">MOD_EVANGELIZO_LANGUE_PT</option>
+					<option value="SP">MOD_EVANGELIZO_LANGUE_SP</option>
+					<option value="TR">MOD_EVANGELIZO_LANGUE_TR</option>
+					<option value="CN">MOD_EVANGELIZO_LANGUE_CN</option>
+					<option value="TRF">MOD_EVANGELIZO_LANGUE_TRF</option>
+					<option value="TRA">MOD_EVANGELIZO_LANGUE_TRA</option>
+					<option value="ARM">MOD_EVANGELIZO_LANGUE_ARM</option>
+					<option value="BYA">MOD_EVANGELIZO_LANGUE_BYA</option>
+					<option value="MAA">MOD_EVANGELIZO_LANGUE_MAA</option>
+				</field>
+				<field
+					name="fete"
+					type="radio"
+					label="MOD_EVANGELIZO_FETE_LABEL"
+					description="MOD_EVANGELIZO_FETE_DESCRIPTION"
+					class="btn-group btn-group-yesno"
+					default="1"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="saint"
+					type="radio"
+					label="MOD_EVANGELIZO_SAINT_LABEL"
+					description="MOD_EVANGELIZO_SAINT_DESCRIPTION"
+					class="btn-group btn-group-yesno"
+					default="1"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="niveau"
+					type="radio"
+					label="MOD_EVANGELIZO_NIVEAU_LABEL"
+					description="MOD_EVANGELIZO_NIVEAU_DESCRIPTION"
+					class="btn-group btn-group-yesno"
+					default="1"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="saints"
+					type="list"
+					label="MOD_EVANGELIZO_SAINTS_LABEL"
+					description="MOD_EVANGELIZO_SAINTS_DESCRIPTION"
+					class="input-medium"
+					default="1"
+					>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="999">MOD_EVANGELIZO_ILLIMITE</option>
+				</field>
+				<field
+					name="balise"
+					type="list"
+					label="MOD_EVANGELIZO_BALISE_LABEL"
+					description="MOD_EVANGELIZO_BALISE_DESCRIPTION"
+					class="input-small"
+					default="h4"
+					>
+					<option value="h3">H3</option>
+					<option value="h4">H4</option>
+					<option value="h5">H5</option>
+					<option value="h6">H6</option>
+					<option value="p">P</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field name="moduleclass_sfx" type="textarea" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" rows="3" />
+				<field name="cache" type="list" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC" default="1" >
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="number" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" default="900" />
+				<field name="cachemode" type="hidden" default="static" >
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
