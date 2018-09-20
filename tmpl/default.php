@@ -1,7 +1,7 @@
 <?php
 /**
  * @package     mod_evangelizo
- * @version     1.0
+ * @version     1.1
  * @author      Nicolas Fischmeister - Agence web Cibles
  * @link        http://www.cibles.fr
  * @copyright   Copyright (C) 2018 Agence web Cibles. All rights reserved.
@@ -9,7 +9,6 @@
  */
 defined('_JEXEC') or die;
 ?>
-
 
 <div class="evangelizo<?php echo $moduleclass_sfx; ?>">
 	<?php if($params->get('fete') == 1 && !empty($fete)) : ?>
@@ -34,7 +33,7 @@ defined('_JEXEC') or die;
 			?>
 				<<?php echo $params->get('balise'); ?> class="saint">
 					<?php
-					$modal_params = array(); 
+					$modal_params = array();
 					$modal_params['title'] = $nom_saint.(!empty(trim($saint->short_description)) ? ' <span style="font-size:0.8em; font-weight:300;">⋅&nbsp;'.$short_description_saint.'</span>' : '');
 					$modal_params['backdrop'] = 'true';
 					$modal_params['height'] = 'auto';
@@ -48,10 +47,10 @@ defined('_JEXEC') or die;
 					else
 						$image = '';
 					$body = '<div>'.$image.$saint->bio.'<div style="clear:both;"></div></div>';
-					?> 
-					<a href="#evangelizo<?php echo $i; ?>" data-toggle="modal"><?php echo $nom_saint; ?></a>
+					?>
+					<a href="#evangelizo<?php echo strtolower($params->get('langue', 'AM')).$i; ?>" data-toggle="modal" class="hasTip" title="<b><?php echo $nom_saint; ?></b>::<?php echo mb_strtoupper(mb_substr($short_description_saint, 0, 1)).mb_substr($short_description_saint, 1); ?>"><?php echo $nom_saint; ?></a>
 				</<?php echo $params->get('balise'); ?>>
-				<?php echo JHTML::_('bootstrap.renderModal', 'evangelizo'.$i, $modal_params, $body); ?>
+				<?php echo JHTML::_('bootstrap.renderModal', 'evangelizo'.strtolower($params->get('langue', 'AM')).$i, $modal_params, $body); ?>
 			<?php
 			endif;
 		endforeach;
