@@ -7,7 +7,7 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>contact@cibles.fr</authorEmail>
 	<authorUrl>www.cibles.fr</authorUrl>
-	<version>1.0.0</version>
+	<version>1.0</version>
 	<description>MOD_EVANGELIZO_XML_DESCRIPTION</description>
 	<files>
 		<filename module="mod_evangelizo">mod_evangelizo.php</filename>
