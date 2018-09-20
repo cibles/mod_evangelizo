@@ -1,7 +1,7 @@
 <?php
 /**
  * @package     mod_evangelizo
- * @version     1.0
+ * @version     1.1
  * @author      Nicolas Fischmeister - Agence web Cibles
  * @link        http://www.cibles.fr
  * @copyright   Copyright (C) 2018 Agence web Cibles. All rights reserved.
@@ -18,8 +18,8 @@ $document->addStyleDeclaration('
 .evangelizo .modal-body > div { padding:0.5em 1em 1em; }
 .evangelizo .modal-body > div img { float:left; margin:0 1em 0.5em 0; max-width:30%; }
 ');
-$file = realpath(dirname(__FILE__)).'/mod_evangelizo.json';
-chmod($file, 0666);
+$file = realpath(dirname(__FILE__)).'/mod_evangelizo_'.strtolower($params->get('langue', 'AM')).'.json';
+if(file_exists($file)) chmod($file, 0666);
 $json = file_get_contents($file);
 if(!isset($json) OR empty($json))
 	$get = 1;
@@ -46,6 +46,7 @@ if(isset($get) AND $get == 1)
 	$evangelizo->langue = $langue;
 	$json = json_encode($evangelizo);
 	$write = file_put_contents($file, $json);
+	chmod($file, 0666);
 }
 $fete = $evangelizo->liturgic_title;
 $saints = $evangelizo->saints;
