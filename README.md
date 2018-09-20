@@ -18,7 +18,7 @@
 
 ### Version
 
-* Version actuelle : 1.0 (stable)
+* Version actuelle : 1.1 (stable)
 
 ### Licence
 
