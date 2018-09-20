@@ -1,7 +1,7 @@
 <?php
 /**
  * @package     mod_evangelizo
- * @version     1.0
+ * @version     1.1
  * @author      Nicolas Fischmeister - Agence web Cibles
  * @link        http://www.cibles.fr
  * @copyright   Copyright (C) 2018 Agence web Cibles. All rights reserved.
